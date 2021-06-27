@@ -1,0 +1,48 @@
+
+.card__list-clothes {
+    @include grid( 2, 2rem );
+
+    @include respond( tab-port ) {
+        @include grid( 3, 2rem);
+    }
+
+    padding: 0;
+
+    li {
+        list-style: none;
+        @include d-flex(center, center);
+    }
+}
+
+.card__item-box {
+    text-align: center;
+    margin-top: 3rem;
+    border: 2px solid $primary;
+    width: 30rem;
+    cursor: pointer;
+}
+
+.card__item-img {
+    padding: 1rem 0;
+
+    img {
+        width: 28rem;
+    }
+}
+
+.card__item-content {
+    background-color: $primary;
+    padding: 1rem;
+
+    h4  {
+        color: $white;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: $white;
+    }
+}

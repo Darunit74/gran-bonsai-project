@@ -1,0 +1,25 @@
+
+.btn__box {
+    @include d-flex( flex-end, center );
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 800;
+    color: $white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: $primary;
+
+    &:hover {
+        background-color: lighten( $primary, 10 );
+    }
+}

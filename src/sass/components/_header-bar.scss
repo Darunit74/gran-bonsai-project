@@ -1,0 +1,90 @@
+
+.header__bar {
+
+    padding: 1rem;
+    border-bottom: 2px dashed $primary-ligth;
+
+    .main__nav {
+
+        @include d-flex( space-between, center );
+    }
+
+    li {
+        list-style: none;
+    }
+
+}
+
+.header__bar-image img {
+    width: 6rem;
+}
+
+.navigation__icon-box {
+    width: 4rem;
+    height: 4rem;
+
+    text-align: center;
+    cursor: pointer;
+
+    &:hover .navigation__icon::before {
+        top: -1.9rem;
+    }
+
+    &:hover .navigation__icon::after {
+        top: .9rem;
+    }
+}
+
+.navigation__icon {
+    margin-top: 1.7rem;
+    position: relative;
+
+
+    &, 
+    &::before,
+    &::after {
+        width: 3rem;
+        height: .5rem;
+        background-color: $primary;
+        display: inline-block;
+        border-radius: 4rem;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+
+    &::before { top: -2rem; }
+    &::after {top: 1rem}
+}
+
+.navigation__icon::before {
+    margin-top: 1rem;
+}
+
+.header__bar-cart-icon {
+    font-size: 2.2rem;
+    color: $primary;
+    cursor: pointer;
+}
+
+.hamburguer__nav {
+    margin-top: 1rem;
+
+    li {
+        padding: .5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: .5rem 10rem .5rem .5rem;
+    }
+}

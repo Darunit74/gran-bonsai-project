@@ -1,0 +1,22 @@
+
+.header__bar-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+
+    transition: all .1s ease;
+
+    h1 {
+        color: $primary;
+    }
+
+    span {
+        font-size: 2rem;
+    }
+
+    &:hover {
+        line-height: .8;
+    }
+}

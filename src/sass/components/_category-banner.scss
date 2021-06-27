@@ -1,0 +1,53 @@
+
+.category__banner {
+    margin-top: 3rem;
+    background-image: linear-gradient(to left, rgba($primary, .5) 5%, rgba($secondary, .5) 95%);
+    padding: 1rem;
+
+    div {
+        @include d-flex( space-around, center );
+    }
+}
+
+.category__banner.man {
+    background-image: linear-gradient(to left, rgba($primary, .5) 5%, rgba($primary-ligth, .5) 95%);
+}
+
+.category__banner.child {
+    background-image: linear-gradient(to left, rgba($primary, .5) 5%, rgba(#681BBF, .5) 95%);
+}
+
+.category__banner-content {
+    font-size: 1.5rem;
+    color: darken($secondary, 10);
+
+    background-color: $white;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    transform: skewX(-3deg);
+
+    h2 {
+        background-image: linear-gradient(to left, rgba($primary, 1) 5%, rgba($secondary, 1) 95%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.category__banner-content.man {
+
+    h2 {
+        background-image: linear-gradient(to left, rgba($primary, 1) 5%, rgba($primary-ligth, 1) 95%);
+    }
+}
+
+.category__banner-content.child {
+
+    h2 {
+        background-image: linear-gradient(to left, rgba($primary, 1) 5%, rgba(#681BBF, 1) 95%);
+    }
+}
+
+.category__banner-box-img img{
+    width: 10rem;
+}

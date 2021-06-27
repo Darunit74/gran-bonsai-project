@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+main {
+    width: 100%;
+}
+
+/* Scrollbar */
+
+
+
+/* End Scrollbar */
