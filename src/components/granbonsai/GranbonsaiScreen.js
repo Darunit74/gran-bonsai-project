@@ -14,7 +14,9 @@ export const GranbonsaiScreen = () => {
                 title={'Ropa Mujeres'}
             />
 
-            <CardList />
+            <CardList 
+                category="woman"
+            />
 
             <div className="btn__box container">
                 <Link 
@@ -30,7 +32,9 @@ export const GranbonsaiScreen = () => {
                 category={'man'}
             />
 
-            <CardList />
+            <CardList 
+                category="man"
+            />
 
             <div className="btn__box container">
                 <Link 
@@ -46,7 +50,9 @@ export const GranbonsaiScreen = () => {
                 category={'child'}
             />
 
-            <CardList />
+            <CardList 
+                category="child"
+            />
 
             <div className="btn__box container">
                 <Link 

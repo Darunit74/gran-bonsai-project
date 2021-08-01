@@ -1,19 +1,23 @@
 
 import React from 'react';
+
+import { GetProductByCategory } from '../../../selectors/GetProductByCategory';
 import { CardItem } from './CardItem';
 
-export const CardList = () => {
+export const CardList = ({ category }) => {
 
-    const clothes = [1, 2, 3, 4, 5, 6];
+    const products = GetProductByCategory( category );
 
     return (
         <ul className="card__list-clothes container mt-5">
             {
-                clothes.map(  clothe => (
+                products.map(  product => (
                     <li 
-                        key={ clothe }
+                        key={ product.id }
                     >
-                        <CardItem />
+                        <CardItem 
+                            { ...product }
+                        />
                     </li>
                 ))
             }

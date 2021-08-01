@@ -1,0 +1,67 @@
+
+.dashboard__product-header {
+
+    border-bottom: 1px solid $light-grey;
+
+    h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 1rem;
+    }
+}
+
+.product__form {
+    padding: 2rem;
+}
+
+.product__item {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .label__box {
+        width: 40rem;
+    }
+
+    .input__box {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    input,
+    textarea {
+        border: 1px solid $light-grey;
+        transition: border .2s ease;
+        padding: 1rem;
+        width: 100%;
+    
+        &:focus {
+            border: 1px solid $primary;
+        }
+    }
+
+    select {
+        border: 1px solid $grey;
+        cursor: pointer;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: darken( $grey, 50 );
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+        margin-top: 0;
+    }
+}

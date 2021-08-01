@@ -26,7 +26,10 @@ export const CategoryProducts = () => {
                 category={ categoryName }
             />
 
-            <CardList />
+            <CardList 
+                category={ categoryName }
+                limit
+            />
         </div>
     )
 }

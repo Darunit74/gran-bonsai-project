@@ -6,6 +6,7 @@ export const products = [
         price: 45.000,
         size: ['M', 'S', 'X'],
         amount: 3,
-        category: 'woman'
+        category: 'woman',
+        url: 'www.test.com'
     },
 ];

@@ -1,15 +1,20 @@
 
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { numberWithDots } from '../../../helpers/numberWithDots';
 
-import tshirtPng from '../../../images/test-images/tshirt.png';
 
-export const CardItem = () => {
+export const CardItem = ({
+    id,
+    url,
+    title,
+    price
+}) => {
 
     const history = useHistory();
 
     const handleProduct = () => {
-        history.push('/products/ropa-prueba');
+        history.push(`/products/${ id }`);
     }
 
 
@@ -19,11 +24,11 @@ export const CardItem = () => {
             onClick={ handleProduct }
         >
             <div className="card__item-img">
-                <img src={ tshirtPng } alt="Tshirt" />
+                <img src={ url } alt="Tshirt" />
             </div>
             <div className="card__item-content">
-                <h4>Ropa 1</h4>
-                <p>COP 40.000,00</p>
+                <h4>{ title }</h4>
+                <p>COP { numberWithDots(price) }</p>
             </div>
         </div>
     )

@@ -2,7 +2,8 @@
 .header__bar {
 
     padding: 1rem;
-    border-bottom: 2px dashed $primary-ligth;
+    background-color: $primary;
+    // border-bottom: 2px dashed $primary-ligth;
 
     .main__nav {
 
@@ -45,7 +46,7 @@
     &::after {
         width: 3rem;
         height: .5rem;
-        background-color: $primary;
+        background-color: $white;
         display: inline-block;
         border-radius: 4rem;
     }
@@ -68,8 +69,43 @@
 
 .header__bar-cart-icon {
     font-size: 2.2rem;
-    color: $primary;
+    color: $white;
     cursor: pointer;
+
+    @include d-flex( space-between, center );
+
+    i {
+        margin-left: 2rem;
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-left: .5rem;
+    }
+
+    .fa-user,
+    .fa-sign-out-alt {
+        font-size: 1.5rem;
+    }
+
+}
+
+.fa-shopping-cart {
+    position: relative;
+
+    .amount__clothes {
+        position: absolute;
+        top: -30%;
+        left: 70%;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $white;
+        background-color: $primary-ligth;
+        padding: .2rem .5rem;
+        border-radius: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
 
 .hamburguer__nav {
@@ -81,10 +117,15 @@
 
     a {
         text-decoration: none;
-        color: $primary;
+        color: $white;
         font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: 800;
         padding: .5rem 10rem .5rem .5rem;
     }
+}
+
+.hamburguer__nav.active-bar {
+    height: 0px;
+    visibility: hidden;
 }

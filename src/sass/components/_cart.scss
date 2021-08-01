@@ -1,0 +1,78 @@
+
+
+.cart__table {
+    @include d-flex( center, flex-start );
+    flex-direction: column;
+    padding: 10rem 0;
+    text-align: left;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    thead {
+
+        tr {
+            background-color: lighten( $light-grey, 15 );
+            border: 1px solid $light-grey;
+
+            th {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding: 1rem;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border: 1px solid $light-grey;
+
+            td {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding: 1rem; 
+            }
+        }
+    }
+}
+
+.product__img {
+
+    img {
+        width: 5rem;
+    }
+}
+
+.product__info {
+    
+    p {
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+}
+
+.product__amount .amount__box {
+    margin-top: 0;
+}
+
+.product__remove {
+    i {
+        padding: 2rem;
+        cursor: pointer;
+    }
+}
+
+.btn__box--order {
+    @include d-flex( flex-end, center );
+    width: 100%;
+}
+
+.product__total,
+.product__totalName {
+
+    p {
+        font-weight: 700;
+    }
+}

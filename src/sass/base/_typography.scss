@@ -9,7 +9,7 @@
     transition: all .1s ease;
 
     h1 {
-        color: $primary;
+        color: $white;
     }
 
     span {
@@ -19,4 +19,13 @@
     &:hover {
         line-height: .8;
     }
+}
+
+.heading__secondary {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 2.2rem;
+    color: $primary;
+    transform: skewX(-10deg);
+    letter-spacing: .1rem;
 }
